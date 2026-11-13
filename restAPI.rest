@@ -1,0 +1,22 @@
+@BASE_URL=http://localhost:3000/api
+
+POST {{BASE_URL}}/auth/register HTTP/1.1
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+  "username":"brijesh",
+  "email":"email@email.com",
+  "password":"password"
+}
+
+###
+
+POST  {{BASE_URL}}/auth/login HTTP/1.1
+User-Agent: rest-client
+Content-Type:application/json
+
+{
+  "email":"email1@email.com",
+  "password":"password"
+}
